@@ -36,7 +36,7 @@ button {
   cursor: pointer;
   border: 0;
   border-radius: 0.5em;
-  color: black;
+  color: #007AFF;
   left: -0.75em;
   right: 0.75em;
   padding-top: 0.5em;
@@ -45,14 +45,17 @@ button {
   padding-right: 0.75em;
   transition:
     background 0.25s ease-in-out,
-    transform 0.2s ease-in-out;
+    transform 0.2s ease-in-out,
+    color 0.25s ease-in-out;
 }
 
 button:hover {
   background: #F2F2F2;
+  color: black;
   transition:
     background 0.1s ease-in-out,
-    transform 0.2s ease-in-out;
+    transform 0.2s ease-in-out,
+    color 0.25s ease-in-out;
 }
 
 button:active {
@@ -62,4 +65,8 @@ button:active {
   transition:
     background 0.05s ease-in-out,
     transform 0.075s ease-in-out;
+}
+
+button: focus {
+  outline: 0;
 }
