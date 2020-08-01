@@ -1,11 +1,13 @@
 :root {
-  --main-bg-color: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";; 
+  --main-bg-color: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
 }
 
 .container {
   height: 10em;
   position: relative;
-  border: 1px solid green; 
+  border: 1px solid green;
 }
 
 .center {
@@ -36,37 +38,34 @@ button {
   cursor: pointer;
   border: 0;
   border-radius: 0.5em;
-  color: #007AFF;
+  color: #007aff;
+  outline: none;
   left: -0.75em;
   right: 0.75em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   padding-left: 0.75em;
   padding-right: 0.75em;
-  transition:
-    background 0.25s ease-in-out,
-    transform 0.2s ease-in-out,
+  transition: background 0.25s ease-in-out, transform 0.2s ease-in-out,
     color 0.25s ease-in-out;
 }
 
-button:hover {
-  background: #F2F2F2;
-  color: black;
-  transition:
-    background 0.1s ease-in-out,
-    transform 0.2s ease-in-out,
-    color 0.25s ease-in-out;
+@media (pointer: fine) {
+  button:hover {
+    outline: none;
+    background: #f2f2f2;
+    color: #007aff;
+    transition: background 0.1s ease-in-out, transform 0.2s ease-in-out,
+      color 0.25s ease-in-out;
+  }
+
+  button:active {
+    outline: none;
+    background: #e6e6e6;
+    color: #005cbf;
+    /*   color: #4DA2FF; */
+    transform: scale(0.98, 0.98);
+    transition: background 0.05s ease-in-out, transform 0.075s ease-in-out;
+  }
 }
 
-button:active {
-  background: #E6E6E6;
-  transform:
-    scale(0.98, 0.98);
-  transition:
-    background 0.05s ease-in-out,
-    transform 0.075s ease-in-out;
-}
-
-button: focus {
-  outline: 0;
-}
