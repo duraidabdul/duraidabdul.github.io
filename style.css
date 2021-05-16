@@ -4,19 +4,15 @@
     "Segoe UI Symbol";
 }
 
-@media screen and (max-width:100000px) {
-    .center {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        
-        background: green;
-        
-        transform: translate(-50%, -50%);
-    }
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 2) {
     .center {
         position: absolute;
         top: 50%;
@@ -24,7 +20,19 @@
         
         background: red;
         
-        transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+}
+
+@media screen and (max-width: 926px) and (-webkit-min-device-pixel-ratio: 3) {
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        
+        background: red;
+        
+        transform: translate(-50%, -50%) scale(1.5);
     }
 }
 
