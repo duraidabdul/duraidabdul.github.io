@@ -4,37 +4,28 @@
     "Segoe UI Symbol";
 }
 
-/**/
-/**/
-/*@media all and (max-width: 480px) {*/
-/*    .center {*/
-/*        position: absolute;*/
-/*        top: 50%;*/
-/*        left: 50%;*/
-/*        */
-/*        background: green;*/
-/*        transform: translate(-50%, -50%) scale(1);*/
-/*    }*/
-/*}*/
-/**/
-/*@media all and (min-width:480px) {*/
-/*    .center {*/
-/*        position: absolute;*/
-/*        top: 50%;*/
-/*        left: 50%;*/
-/*        */
-/*        background: green;*/
-/*        */
-/*        transform: translate(-50%, -50%);*/
-/*    }*/
-/*}*/
+@media all and (max-width: 480px) {
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        
+        background: red;
+        
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
 
-.center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    
-    transform: translate(-50%, -50%);
+@media all and (min-width:480px) {
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        
+        background: green;
+        
+        transform: translate(-50%, -50%);
+    }
 }
 
 .titleContainer {
