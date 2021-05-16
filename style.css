@@ -103,16 +103,18 @@ h2 {
     opacity 0.25s ease-in-out;
 }
 
-.project:hover {
-    background-color: #eee;
-    
-    transition: background 0.1s ease-in-out, transform 0.2s ease-in-out,
-    color 0.25s ease-in-out;
-}
+@supports not (-webkit-touch-callout: none) {
+    .project:hover {
+        background-color: #eee;
+        
+        transition: background 0.05s ease-in-out, transform 0.2s ease-in-out,
+        color 0.25s ease-in-out;
+    }
 
-.project:active {
-    transform: scale(0.98);
-    transition: background 0.05s ease-in-out, transform 0.075s ease-in-out;
+    .project:active {
+        transform: scale(0.98);
+        transition: background 0.05s ease-in-out, transform 0.075s ease-in-out;
+    }
 }
 
 .project a {
