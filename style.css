@@ -142,10 +142,15 @@ h2 {
 b1 {
     color: #007aff;
     font-size: 1.2em;
-    font-weight: 500;
 }
 
 b2 {
     font-weight: 500;
     font-size: 1em;
+}
+
+@supports (-webkit-touch-callout: none) {
+    b1 {
+        font-weight: 500;
+    }
 }
