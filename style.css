@@ -16,22 +16,19 @@
 
 @media screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     .center {
-        transform: translate(-50%, -100%) scale(2);
+        transform: translate(-50%, -65%) scale(0.8);
     }
 }
 
 @media screen and (max-width: 1500px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
     .center {
-        transform: translate(-50%, -100%) scale(2);
+        transform: translate(-50%, -65%) scale(0.8);
     }
 }
 
 .titleContainer {
     display: flex;
-    width: 405px
-}
-.fixed {
-    width: 100px;
+    width: 375px;
 }
 
 img {
@@ -53,7 +50,7 @@ img {
     margin-bottom: 0em;
     
     position: relative;
-    left: 20px
+    left: 20px;
 }
 
 .t2 {
